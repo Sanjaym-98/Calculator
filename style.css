@@ -1,0 +1,85 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set box-sizing to border-box for easier sizing calculation */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Set font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Style for the main container */
+#main {
+    display: table;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Style for the rows of buttons */
+.row {
+    display: table-row;
+}
+
+/* Style for the buttons */
+.btn {
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Style for the clear button */
+.btn:last-child {
+    grid-column: 1 / span 2;
+    background-color: #f44336;
+}
+
+/* Style for the equal button */
+.btn:last-child {
+    grid-row: 4 / span 2;
+    background-color: #2196F3;
+}
+
+/* Style for the input box */
+#input {
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: right;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Hover effect for the buttons */
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+/* Active effect for the buttons */
+.btn:active {
+    background-color: #1e5024;
+}
